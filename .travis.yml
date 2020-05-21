@@ -6,3 +6,6 @@ services:
 
 before_install:
   - docker build -t shyam3105/simpleweb1 -f Dockerfile .
+
+script:
+  - docker run --rm  shyam3105/simpleweb1 npm run test
